@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace The_DJ;
 
-public enum Reputation
+public enum Day
 {
-	Unwanted,
-	BedroomDJ,
-	PartyDJ,
-	ClubDJ,
-	FestivalDJ
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
 }

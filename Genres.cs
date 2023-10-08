@@ -4,15 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace The_DJ
+namespace The_DJ;
+
+enum Genre
 {
-	enum Genre
-	{
-		TopCharts,
-		Lounge,
-		Classical,
-		EDM,
-		Rock,
-		Rap
-	}
+	TopCharts,
+	Lounge,
+	Classical,
+	EDM,
+	Rock,
+	Rap
 }

@@ -17,17 +17,25 @@ while (string.IsNullOrWhiteSpace(playerName))
 Console.Clear();
 Player player = new(0, playerName, Reputation.BedroomDJ);
 
-player.DisplayStats(player);
+// DaysLoop
+int week = 0;
+while (Days.dayCounter < 31)
+{
+    if (Days.dayCounter % 7 == 0)
+    {
+        Console.WriteLine("Week " + week); ;
+        player.DisplayStats(player);
+        Console.ReadKey();
+        week++;
+    }
+    Console.Clear();
 
-Console.ReadLine();
+    Days.DisplayDay(Days.dayCounter);
 
-player.DayMenu(player);
+    player.DayMenu(player);
 
-Console.ReadLine();
-
-player.checkStats(player);
-
-Console.ReadLine();
+    Console.ReadKey();
+}
 
 void displayTitle()
 {
