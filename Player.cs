@@ -10,7 +10,7 @@ public class Player
 {
     private Reputation Reputation { get; set; }
     public string Name { get; set; }
-    private int Balance { get; set; }
+    public int Balance { get; set; }
 
     //Constructor
     public Player(int balance, string name, Reputation reputation)
@@ -73,7 +73,6 @@ public class Player
     }
     public void DisplayStats(Player p)
     {
-        Console.Clear();
         Console.WriteLine("Name " + p.Name);
         Console.WriteLine("Balance: $" + p.Balance);
         Console.WriteLine("Reputation: " + p.Reputation + "  //  Level " + (int)p.Reputation);
